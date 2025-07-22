@@ -2,7 +2,6 @@ import streamlit as st
 import qrcode
 import io
 import os
-import cairosvg
 from PIL import Image, ImageDraw
 from urllib.parse import urlparse
 
@@ -93,13 +92,12 @@ def get_logo_image(domain, size=120):
     if not domain:
         return None
     filename = domain.split(".")[0]
-    logo_path = os.path.join("logos", f"{filename}.svg")
+    logo_path = os.path.join("logos", f"{filename}.png")
     if os.path.exists(logo_path):
         try:
-            with open(logo_path, 'rb') as svg_file:
-                svg_data = svg_file.read()
-                png_data = cairosvg.svg2png(bytestring=svg_data, output_width=size, output_height=size)
-                return Image.open(io.BytesIO(png_data)).convert("RGBA")
+            img = Image.open(logo_path).convert("RGBA")
+            img = img.resize((size, size), Image.Resampling.LANCZOS)
+            return img
         except Exception as e:
             print(f"Error loading logo from {logo_path}: {e}")
     return None     
