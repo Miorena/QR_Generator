@@ -1,4 +1,4 @@
 streamlit
-qrcode[pil]
+qrcode
 Pillow
 cairosvg
