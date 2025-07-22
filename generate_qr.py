@@ -1,4 +1,3 @@
-import qrcode.constants
 import streamlit as st
 import qrcode
 import io
