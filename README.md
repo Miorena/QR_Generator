@@ -1,1 +1,3 @@
-This is my first functional projet that can be used online, by searching in your browser : qrinity.streamlit.app
+📝 This is my first projet that can be used online, by searching " qrinity.streamlit.app " in your browser.
+  ✅ Functional
+  ✅ Useful
