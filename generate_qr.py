@@ -13,7 +13,8 @@ COLORS_GRADIENT = {
     "Orange": ["#ffd194", "#ffba6f","#ff8f43", "#d95c00", "#7f3300"],
     "Purple": ["#d4a4ff", "#a766ff", "#7733ff", "#4d00b3", "#2a005d"],
     "Pink": ["#ffc0cb", "#ff99b6", "#ff6699", "#e60073", "#99004d"],
-    "Red": ["#ff7f7f", "#ff4c4c", "#e60000", "#990000", "#4d0000"]
+    "Red": ["#ff7f7f", "#ff4c4c", "#e60000", "#990000", "#4d0000"],
+    "Instagram": ["#f09433", "#e6683c", "#dc2743", "#cc2366", "#bc1888"]
 }
 
 # Function to convert hex color to RGB
